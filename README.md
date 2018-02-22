@@ -1,6 +1,8 @@
 # get-schannel-ciphers
 List enabled SCHANNEL ciphers (Windows).
 
+If you run this in Kudu (Azure App Service), you'll need to hit Enter to get any output (hangs on `Console.ReadKey()`).
+
 # UPDATE Feb-22 2018:
 PowerShell on Windows 10/Server 2016 now has a `Get-TlsCipherSuite` cmdlet. Use that instead.
 https://docs.microsoft.com/en-us/powershell/module/tls/get-tlsciphersuite?view=win10-ps
